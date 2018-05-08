@@ -1024,7 +1024,7 @@ $("main-list").data = data.map(function(item) {
 })
 function scriptVersionUpdate() {
   $http.get({
-    url: "https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/Update",
+    url: "https://raw.githubusercontent.com/smallwhispers/jsbox_script/blob/master/gongju/Update",
     handler: function(resp) {
       var afterVersion = resp.data.version;
       var msg = resp.data.msg;
@@ -1035,7 +1035,7 @@ function scriptVersionUpdate() {
           actions: [{
             title: "更新",
             handler: function() {
-              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/gongju.js&name=gongju" + afterVersion + "&icon=icon_135.png";
+              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/blob/master/gongju/gongju.js&name=gongju" + afterVersion + "&icon=icon_135.png";
               $app.openURL(encodeURI(url));
               $app.close()
             }
