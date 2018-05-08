@@ -1,4 +1,4 @@
-var version = 1.0
+var version = 1.1
 var data = [{
   name: "✬十二星座",
     page: {
@@ -1035,7 +1035,7 @@ function scriptVersionUpdate() {
           actions: [{
             title: "更新",
             handler: function() {
-              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/blob/master/gongju/gongju.js&name=gongju" + afterVersion + "&icon=icon_135.png";
+              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/gongju.js&name=gongju" + afterVersion + "&icon=icon_135.png";
               $app.openURL(encodeURI(url));
               $app.close()
             }
