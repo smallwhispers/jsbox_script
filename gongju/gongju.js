@@ -1031,11 +1031,11 @@ function scriptVersionUpdate() {
       if (afterVersion > version) {
         $ui.alert({
           title: "检测到新的版本！V" + afterVersion,
-          message: "是否更新?\n更新完成后请退出至扩展列表重新启动新版本。\n" + msg,
+          message: "是否更新?\n更新完成后请重新启动新版本。\n" + msg,
           actions: [{
             title: "更新",
             handler: function() {
-              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/gongju.js&name=gongju" + afterVersion + "&icon=icon_135.png";
+              var url = "jsbox://install?url=https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/gongju.js";
               $app.openURL(encodeURI(url));
               $app.close()
             }
@@ -1047,3 +1047,4 @@ function scriptVersionUpdate() {
     }
   })
 }
+scriptVersionUpdate()
