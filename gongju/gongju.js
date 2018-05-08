@@ -1024,7 +1024,7 @@ $("main-list").data = data.map(function(item) {
 })
 function scriptVersionUpdate() {
   $http.get({
-    url: "https://raw.githubusercontent.com/smallwhispers/jsbox_script/blob/master/gongju/Update",
+    url: "https://raw.githubusercontent.com/smallwhispers/jsbox_script/master/gongju/Update",
     handler: function(resp) {
       var afterVersion = resp.data.version;
       var msg = resp.data.msg;
